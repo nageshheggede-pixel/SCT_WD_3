@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizNova | Interactive Quiz Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+
+        <section class="quiz-card" id="startScreen">
+            <p class="eyebrow">SKILLCRAFT TECHNOLOGY · TASK 03</p>
+
+            <h1>QuizNova</h1>
+
+            <p class="intro">
+                Test your knowledge, challenge yourself, and discover your score.
+            </p>
+
+            <button id="startBtn" class="primary-btn">
+                Start Quiz
+            </button>
+        </section>
+
+        <section class="quiz-card hidden" id="quizScreen">
+
+            <div class="quiz-top">
+                <span id="questionCounter">Question 1 of 5</span>
+                <span id="scoreDisplay">Score: 0</span>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <h2 id="questionText">Question text</h2>
+
+            <div id="optionsContainer" class="options-container"></div>
+
+            <button id="nextBtn" class="primary-btn" disabled>
+                Next Question
+            </button>
+
+        </section>
+
+        <section class="quiz-card hidden" id="resultScreen">
+
+            <p class="eyebrow">QUIZ COMPLETED</p>
+
+            <h2>Your Final Result</h2>
+
+            <div class="result-circle">
+                <span id="finalScore">0/5</span>
+            </div>
+
+            <p id="resultMessage">Great effort!</p>
+
+            <button id="restartBtn" class="primary-btn">
+                Play Again
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
